@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        .div {
+            background-color: bisque;
+        }
+    </style>
+    <title>Regisztráció</title>
+</head>
+
+<body>
+    <div class="w-25 p-3 m-auto mt-5 border border-dark div">
+        <form>
+            <fieldset>
+                <legend>Regisztráció</legend>
+                <div class="mb-3">
+                    <label for="e-mail" class="form-label">E-mail cím</label>
+                    <input type="email" class="form-control" id="e-mail" placeholder="pelda@gmail.com">
+                </div>
+                <div class="mb-3">
+                    <label for="jelszo" class="form-label">Jelszó</label>
+                    <input type="password" class="form-control" id="jelszo" placeholder="abcd1234">
+                </div>
+                <div class="mb-3">
+                    <label for="szuletesnap" class="form-label">Szuletési év</label>
+                    <input type="date" class="form-control" id="szuletesnap">
+                </div>
+                <div class="mb-3">
+                    <label for="telszam" class="form-label">Telefonszám</label>
+                    <input type="tel" class="form-control" id="telszam" placeholder="+36 000 000">
+                </div>
+                <p>Nem</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="nem" id="no">
+                    <label class="form-check-label" for="ferfi">
+                        Férfi
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="nem" id="no">
+                    <label class="form-check-label" for="no">
+                        Nő
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="nem" id="nemadommeg">
+                    <label class="form-check-label" for="nemadommeg">
+                        Nem akarom megadni
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <select class="form-select mt-3" aria-label="Default select example">
+                        <option selected>Legmagasabb végzettsége?</option>
+                        <option value="1">Nincs semmilyen végzettségem</option>
+                        <option value="2">Általános iskola</option>
+                        <option value="3">Középsikola</option>
+                        <option value="4">Alapképzés</option>
+                        <option value="5">Mesterképzés</option>
+                        <option value="6">Doktori képzés</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="pkep" class="form-label">Profilkép ( Nem kötelező )</label>
+                    <input class="form-control" type="file" id="pkep">
+                </div>
+                <button type="submit" class="btn btn-outline-primary">Regisztrálás</button>
+            </fieldset>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
