@@ -1,0 +1,47 @@
+body {
+  background-color: mediumseagreen;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: crimson;
+}
+
+fieldset {
+  background-color: rgb(97, 212, 149);
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+  border-radius: 10px;
+}
+label {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+button {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: "Courier New", Courier, monospace;
+  border-style: none;
+}
+button:hover {
+  background-color: rgb(218, 83, 110);
+}
+legend {
+  font-size: 60px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: crimson;
+}
+div {
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
