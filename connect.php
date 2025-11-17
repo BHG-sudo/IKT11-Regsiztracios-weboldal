@@ -11,9 +11,17 @@ if (!$conn) {
 }
 echo "Connected successfully";
 
-$sql = "";
-$result = mysqli_query($conn, $sql);
+$email = $_POST["email"];
+$jelszo = $_POST["jelszo"];
+$szulnap = $_POST["szuletetsnap"];
+$tel = $_POST["telefonszam"];
 
-$kiirhato = mysqli_fetch_assoc($result);
+$sql = "INSERT INTO regisztráció (email, jelszó, születési, telefonszám)
+VALUES ('$email', '$jelszo', '$szulnap', '$tel')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "Sikeres regisztráció";
+} else {
+  echo "Hiba: " . $sql . "<br>" . $conn->error;
+}
 mysqli_close($conn);
-?>

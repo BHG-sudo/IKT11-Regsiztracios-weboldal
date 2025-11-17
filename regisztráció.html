@@ -24,7 +24,7 @@
 
 <body>
     <div class="w-25 p-3 m-auto mt-5 border border-dark div">
-        <form >
+        <form action="connect.php" method="post">
             <fieldset>
                 <legend>Regisztráció</legend>
                 <div class="mb-3">
@@ -41,13 +41,14 @@
                 </div>
                 <div class="mb-3">
                     <label for="telszam" class="form-label">Telefonszám</label>
-                    <input type="tel" class="form-control" id="telszam" name="telefonszam" placeholder="+36 00 000 0000">
+                    <input type="tel" class="form-control" id="telszam" name="telefonszam"
+                        placeholder="+36 00 000 0000">
                 </div>
                 <div class="mb-3">
                     <label for="pkep" class="form-label">Profilkép ( Nem kötelező )</label>
                     <input class="form-control" type="file" id="pkep">
                 </div>
-                <button type="submit" class="btn btn-outline-primary">Regisztrálás</button>
+                <button type="submit" value="Submit" class="btn btn-outline-primary">Regisztrálás</button>
             </fieldset>
         </form>
     </div>
