@@ -24,54 +24,24 @@
 
 <body>
     <div class="w-25 p-3 m-auto mt-5 border border-dark div">
-        <form>
+        <form >
             <fieldset>
                 <legend>Regisztráció</legend>
                 <div class="mb-3">
                     <label for="e-mail" class="form-label">E-mail cím</label>
-                    <input type="email" class="form-control" id="e-mail" placeholder="pelda@gmail.com">
+                    <input type="email" class="form-control" id="e-mail" name="email" placeholder="pelda@gmail.com">
                 </div>
                 <div class="mb-3">
                     <label for="jelszo" class="form-label">Jelszó</label>
-                    <input type="password" class="form-control" id="jelszo" placeholder="abcd1234">
+                    <input type="password" class="form-control" id="jelszo" name="jelszo" placeholder="abcd1234">
                 </div>
                 <div class="mb-3">
                     <label for="szuletesnap" class="form-label">Szuletési év</label>
-                    <input type="date" class="form-control" id="szuletesnap">
+                    <input type="date" class="form-control" id="szuletesnap" name="szuletesnap">
                 </div>
                 <div class="mb-3">
                     <label for="telszam" class="form-label">Telefonszám</label>
-                    <input type="tel" class="form-control" id="telszam" placeholder="+36 000 000">
-                </div>
-                <p>Nem</p>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="nem" id="no">
-                    <label class="form-check-label" for="ferfi">
-                        Férfi
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="nem" id="no">
-                    <label class="form-check-label" for="no">
-                        Nő
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="nem" id="nemadommeg">
-                    <label class="form-check-label" for="nemadommeg">
-                        Nem akarom megadni
-                    </label>
-                </div>
-                <div class="mb-3">
-                    <select class="form-select mt-3" aria-label="Default select example">
-                        <option selected>Legmagasabb végzettsége?</option>
-                        <option value="1">Nincs semmilyen végzettségem</option>
-                        <option value="2">Általános iskola</option>
-                        <option value="3">Középsikola</option>
-                        <option value="4">Alapképzés</option>
-                        <option value="5">Mesterképzés</option>
-                        <option value="6">Doktori képzés</option>
-                    </select>
+                    <input type="tel" class="form-control" id="telszam" name="telefonszam" placeholder="+36 00 000 0000">
                 </div>
                 <div class="mb-3">
                     <label for="pkep" class="form-label">Profilkép ( Nem kötelező )</label>
@@ -81,9 +51,6 @@
             </fieldset>
         </form>
     </div>
-
-
-
 </body>
 
 </html>
