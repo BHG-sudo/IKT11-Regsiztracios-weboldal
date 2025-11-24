@@ -10,16 +10,17 @@
 
 <body>
     <h1>Bejelentkezés</h1>
-    <fieldset>
-        <div id="sha">
-            <label for="email"> Adja meg az email címét</label>
-            <input type="email" id="email">
+    <form action="bejelentkezes.php" method="post">
+        <fieldset>
+            <div id="sha">
+                <label for="email"> Adja meg az email címét</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="jelszo"> Adja meg a jelszavat</label>
-            <input type="password" id="jelszo">
-            <button>Bejelentkezés</button>
-        </div>
-    </fieldset>
-
+                <label for="jelszo"> Adja meg a jelszavat</label>
+                <input type="password" id="jelszo" name="jelszo" required>
+                <button>Bejelentkezés</button>
+            </div>
+        </fieldset>
+    </form>
 
 </html>

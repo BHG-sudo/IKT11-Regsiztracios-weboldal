@@ -3,52 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-color: wheat;
-        }
-
-        .div {
-            background-color: bisque;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <title>Regisztráció</title>
 </head>
 
 <body>
-    <div class="w-25 p-3 m-auto mt-5 border border-dark div">
+    <div>
         <form action="connect.php" method="post">
             <fieldset>
                 <legend>Regisztráció</legend>
-                <div class="mb-3">
-                    <label for="e-mail" class="form-label">E-mail cím</label>
-                    <input type="email" class="form-control" id="e-mail" name="email" placeholder="pelda@gmail.com">
-                </div>
-                <div class="mb-3">
-                    <label for="jelszo" class="form-label">Jelszó</label>
-                    <input type="password" class="form-control" id="jelszo" name="jelszo" placeholder="abcd1234">
-                </div>
-                <div class="mb-3">
-                    <label for="szuletesnap" class="form-label">Szuletési év</label>
-                    <input type="date" class="form-control" id="szuletesnap" name="szuletesnap">
-                </div>
-                <div class="mb-3">
-                    <label for="telszam" class="form-label">Telefonszám</label>
-                    <input type="tel" class="form-control" id="telszam" name="telefonszam"
-                        placeholder="+36 00 000 0000">
-                </div>
-                <div class="mb-3">
-                    <label for="pkep" class="form-label">Profilkép ( Nem kötelező )</label>
-                    <input class="form-control" type="file" id="pkep">
-                </div>
-                <button type="submit" value="Submit" class="btn btn-outline-primary">Regisztrálás</button>
+                <div>
+                    <label for="e-mail">E-mail cím</label>
+                    <input type="email" name="email" required placeholder="pelda@gmail.com">
+                    </div=>
+                    <div>
+                        <label for="jelszo">Jelszó</label>
+                        <input type="password" name="jelszo" required placeholder="abcd1234">
+                        </div=>
+                        <div>
+                            <label for="szuletesnap">Szuletési év</label>
+                            <input type="date" name="szuletesnap">
+                        </div>
+                        <div>
+                            <label for="telszam">Telefonszám</label>
+                            <input type="tel" name="telefonszam" maxlength="11" required placeholder="+36 00 000 0000">
+                            </div=>
+                            <button type="submit" value="Submit">Regisztrálás</button>
             </fieldset>
         </form>
     </div>
