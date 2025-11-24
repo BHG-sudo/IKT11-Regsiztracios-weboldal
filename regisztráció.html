@@ -4,32 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bejelent.css">
     <title>Regisztráció</title>
 </head>
 
 <body>
     <div>
-        <form action="connect.php" method="post">
+        <h1>Regisztráció</h1>
+        <form action="regiszt.php" method="post">
             <fieldset>
-                <legend>Regisztráció</legend>
-                <div>
+                <div id="sha">
                     <label for="e-mail">E-mail cím</label>
-                    <input type="email" name="email" required placeholder="pelda@gmail.com">
-                    </div=>
-                    <div>
-                        <label for="jelszo">Jelszó</label>
-                        <input type="password" name="jelszo" required placeholder="abcd1234">
-                        </div=>
-                        <div>
-                            <label for="szuletesnap">Szuletési év</label>
-                            <input type="date" name="szuletesnap">
-                        </div>
-                        <div>
-                            <label for="telszam">Telefonszám</label>
-                            <input type="tel" name="telefonszam" maxlength="11" required placeholder="+36 00 000 0000">
-                            </div=>
-                            <button type="submit" value="Submit">Regisztrálás</button>
+                    <input type="email" id="email" name="email" required placeholder="pelda@gmail.com">
+                    <label for="jelszo">Jelszó</label>
+                    <input type="password" id="jelszo" name="jelszo" required placeholder="abcd1234">
+                    <label for="szuletesnap">Szuletési év</label>
+                    <input type="date" name="szuletesnap">
+                    <label for="telszam">Telefonszám</label>
+                    <input type="tel" name="telefonszam" maxlength="11" required placeholder="+36 00 000 0000">
+                    <button type="submit" value="Submit">Regisztrálás</button>
+                </div>
             </fieldset>
         </form>
     </div>
