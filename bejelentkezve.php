@@ -22,8 +22,8 @@
                 <p><?php echo "Email címe: " . $_SESSION["email"] ?></p>
                 <p><?php echo "Születesnap: " . $_SESSION["szuletesnap"] ?></p>
                 <p><?php echo "Telefonszám: " . $_SESSION["telefonsz"] ?></p>
-                <button type="submit">Kijelentkezés</button>
-                <button type="submit">Adatok módosítása</button>
+                <button type="submit"><a href="bejelentkezes.html">Kijelentkezés</a></button>
+                <button type="submit"><a href="modadat.php">Adat Módosítás</a></button>
             </fieldset>
         </form>
     </div>

@@ -14,6 +14,7 @@ if (!$conn) {
 
 $email = $_POST["email"];
 $jelszo = $_POST["jelszo"];
+$modosit = isset($_POST["mod"]);
 
 $sql = "SELECT * FROM regisztráció where email = '$email'";
 $result = mysqli_query($conn, $sql);
@@ -30,8 +31,13 @@ if (mysqli_num_rows($result) > 0) {
     }
 }
 if ($jelszo == $_SESSION["jelszo"]) {
-    header('Location: bejelentkezve.php');
-    exit;
+    if ($modosit == 1) {
+        header('Location: modadat.php');
+        exit;
+    } else {
+        header('Location: bejelentkezve.php');
+        exit;
+    }
 } else {
     echo "Sikertelen bejelentkezés";
 }
