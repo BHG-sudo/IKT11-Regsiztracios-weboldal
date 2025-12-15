@@ -9,7 +9,7 @@
     <title>Bejelenkezett felhasználó</title>
     <style>
         fieldset {
-            height: 180px;
+            height: 230px;
         }
     </style>
 </head>
